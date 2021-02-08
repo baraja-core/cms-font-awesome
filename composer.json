@@ -1,0 +1,33 @@
+{
+	"name": "baraja-core/cms-font-awesome",
+	"description": "Extension of Baraja CMS by FontAwesome.",
+	"homepage": "https://github.com/baraja-core/cms-font-awesome",
+	"authors": [
+		{
+			"name": "Jan Barášek",
+			"homepage": "https://baraja.cz"
+		}
+	],
+	"require": {
+		"php": ">=7.4.0",
+		"baraja-core/cms": "^2.3"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^0.12.18",
+		"tracy/tracy": "^2.7",
+		"phpstan/phpstan-nette": "^0.12.6",
+		"spaze/phpstan-disallowed-calls": "^1.1",
+		"roave/security-advisories": "dev-master"
+	},
+	"autoload": {
+		"classmap": [
+			"src/"
+		]
+	},
+	"scripts": {
+		"phpstan": [
+			"vendor/bin/phpstan analyse src -c phpstan.neon --level 8 --no-progress"
+		]
+	},
+	"minimum-stability": "stable"
+}
