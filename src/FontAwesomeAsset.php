@@ -11,7 +11,7 @@ final class FontAwesomeAsset implements CmsAsset
 {
 	public function getUrl(): string
 	{
-		return 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css';
+		return 'https://pro.fontawesome.com/releases/v5.15.3/css/all.css';
 	}
 
 
